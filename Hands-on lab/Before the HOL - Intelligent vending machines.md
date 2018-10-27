@@ -34,7 +34,7 @@ Microsoft and the trademarks listed at <https://www.microsoft.com/en-us/legal/in
       - [Task 5: Set up Photos Storage account containers](task-5-set-up-photos-storage-account-containers)
       - [Task 6: Configure Microsoft Machine Learning Server on Linux](task-6-configure-microsoft-machine-learning-server-on-linux)
 
-# Intelligent vending machines hands-on lab setup guide
+# Intelligent vending machines before the hands-on lab setup guide
 
 ## Requirements
 
