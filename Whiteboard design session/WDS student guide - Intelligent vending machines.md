@@ -171,6 +171,7 @@ Directions: With all participants at your table, respond to the following questi
 *Visualization and reporting*
 
 1. What tool would you recommend Trey utilize for performing ad-hoc wrangling, exploration, and visualization of their data?
+
 2. How would you make the resulting visualization available to others in the organization?
 
 **Prepare**
