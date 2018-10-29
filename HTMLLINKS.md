@@ -9,7 +9,3 @@
 
 [HOL step-by-step - Intelligent vending machines.html](https://cloudworkshop.blob.core.windows.net/intelligent-vending-machines/Hands-on%20lab/HOL%20step-by-step%20-%20Intelligent%20vending%20machines.html)
 
-[HOL unguided - Intelligent vending machines.html](https://cloudworkshop.blob.core.windows.net/intelligent-vending-machines/Hands-on%20lab/HOL%20unguided%20-%20Intelligent%20vending%20machines.html)
-
-[README.html](https://cloudworkshop.blob.core.windows.net/intelligent-vending-machines/Hands-on%20lab/README.html)
-
