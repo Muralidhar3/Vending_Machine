@@ -9,7 +9,7 @@ Hands-on lab step-by-step
 </div>
 
 <div class="MCWHeader3">
-September 2018
+December 2018
 </div>
 
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -227,7 +227,7 @@ In this exercise, you will create a machine learning model that predicts the pur
 
     ![Screenshot of Connect to cluster. Ssh.azurehdinsight.net is highlighted in the Hostname field, with the endpoint highlighted below.](./media/hdinsight-connect-to-cluster-with-ssh.png "Connect to cluster section")
 
-3. If prompted to continue connecting, enter yes.
+3. If prompted to continue connecting, enter **yes**.
 
 4. Enter the password **Password.1!!**
 
@@ -242,7 +242,7 @@ In this exercise, you will create a machine learning model that predicts the pur
     rxSetComputeContext(sparkCluster)
     ```
 
-7. In Visual Studio, open `TrainModel.r`, and copy the entire script.
+7. In Visual Studio, open `TrainModel.R`, and copy the entire script.
 
 8. Paste the script in the R shell, and press ENTER (you may need to press ENTER a few times until you get to the last line of the script).
 
@@ -294,7 +294,7 @@ In this exercise, you will create a machine learning model that predicts the pur
 
     ![Screenshot of the Git Bash R Shell window with output verifying that the three files exist in HDFS.](./media/git-bash-r-shell-models-file-list.png "Git Bash R Shell")
 
-17. Using Visual Studio, Cloud Explorer, navigate to the **labstorageINIT** storage account for your HDInsight cluster, expand:
+17. Using Visual Studio, Cloud Explorer, navigate to the **labstorageSUFFIX** storage account for your HDInsight cluster, expand:
 
     ![Screenshot of Visual Studio, Cloud Explorer expanded as: labstorageSUFFIX\\Blob Containers\\vendingmachinescluster.](./media/visual-studio-cloud-explorer-lab-storage-container.png "Cloud Explorer storage container")
 
@@ -347,7 +347,7 @@ After training a model, you want to operationalize the model so that it becomes 
 
     ![Command to setup ML server to host a webservice has been completed. the port 12800 is highlighted.](./media/git-bash-setup-ml-web-service.png "Web Service Listening")
 
-9. In Visual Studio, open the `App.config` for the Simulator project. This can be done by expanding the Simulator project in the Solution Explorer, and double-clicking on `App.config` under the **Simulator** project.
+9. In Visual Studio, open the `App.config` for the **Simulator** project. This can be done by expanding the Simulator project in the Solution Explorer, and double-clicking on `App.config` under the **Simulator** project.
 
     ![The Visual Studio Solution Explorer has Simulator highlighted and expanded, and under it, App.config highlighted.](./media/visual-studio-solution-explorer-simulator-app-config.png "Visual Studio Solution Explorer")
 
@@ -626,6 +626,15 @@ To provision access to the Face API (which provides demographic information abou
     Update-Package -Reinstall
     ```
 
+> NOTE:  The starter-project may be using an older Face API.  In this case, you will need to run the following as the NuGet Package may be unpublished:
+
+    ```powershell
+    Install-Package Microsoft.ProjectOxford.Face -Version 1.4.0 
+    Install-Package Newtonsoft.Json -Version 10.0.1
+    Install-Package Microsoft.ProjectOxford.Common -Version 1.0.324.0
+    Update-Package Microsoft.ProjectOxford.Common -reinstall
+    ```
+
 2. This will force the packages to get downloaded again. If propmpted, click **Yes** to update the app.config file.
 
 3. Now, in Solution Explorer, right-click the **Simulator** project, and select **Build**.
@@ -798,6 +807,8 @@ In these steps, you will provision an instance of IoT Hub.
 
 5. Select **iothubowner** policy.
 
+> NOTE:  If you did not wait for the resource to provision you will not see any policies yet.
+
     ![The Azure portal is shown with the iothubowner selected.](./media/iot-hub-shared-access-policies-iothubowner.png "IoT Hub Owner shared access policy")
 
 6. In the **iothubowner** blade, select the Copy button to the right of the **Connection string - primary key** field. Paste the connection string value into a text editor, such as Notepad, as this will be needed later in this lab.
@@ -882,8 +893,6 @@ In these steps, you will provision an instance of IoT Hub.
 
 2. Set the `IoTHubServiceConnectionString` appSetting to have a value of the connection string for the **service** policy to your IoT Hub (recall you can get this from the Azure Portal IoT Hub blade, Shared access policies, and then select the policy).
 
-    ![Screenshot of the iothubowner blade. A callout points to the copy button to the right of the connection string - primary key field.](./media/iot-hub-shared-access-policies-iothubowner-blade.png "iothubowner blade")
-
 3. Set the `storageConnectionString` appSetting to have the same connection string for your storage account that the `App.config` file in the Simulator project has.
 
 4. Save the file.
@@ -917,6 +926,8 @@ In these steps, you will provision an instance of IoT Hub.
 15. In the DeviceControlConsole, press 1 to push the promotion for Soda.
 
     ![Screenshot of the Vending Machine Simulator and DeviceControlConsole. This time, the Vending Machine Simulator displays the soda ad.](./media/vending-machine-simulator-plus-devicecontrolconsole-select.png "Vending Machine Simulator and DeviceControlConsole")
+
+> NOTE:  If you get a DeviceNotFoundException, ensure that you entered the IoT connection strings properly.
 
 16. Observe that the entire promotion surface of the vending machine changes (product name, price, and image).
 
