@@ -626,7 +626,7 @@ To provision access to the Face API (which provides demographic information abou
     Update-Package -Reinstall
     ```
 
-> NOTE:  The starter-project may be using an older Face API.  In this case, you will need to run the following as the NuGet Package may be unpublished:
+>**Note**:  The starter-project may be using an older Face API.  In this case, you will need to run the following as the NuGet Package may be unpublished:
 
     ```powershell
     Install-Package Microsoft.ProjectOxford.Face -Version 1.4.0 
@@ -641,7 +641,7 @@ To provision access to the Face API (which provides demographic information abou
 
 4. Ensure that your build generates no errors (View the Output and Errors windows, under the View menu in Visual Studio).
 
-> **NOTE:** Only build the Simulator project, the other projects are not ready to be built just yet.
+> **Note**: Only build the Simulator project, the other projects are not ready to be built just yet.
 
 5. Again, in solution explorer, right-click the **Simulator** project, and select **Set as Startup Project**.
 
@@ -749,7 +749,7 @@ In this exercise, you will create an in-memory, columnar index table in SQL DB t
 
 ### Task 3: Test purchasing
 
-1. In solution explorer, right-click the **Simulator** project, and select **Build**
+1. In solution explorer, right-click the **Simulator** project, and select **Build**.
 
 >**Note**: You may need to ensure the previous instance you started has been closed before rebuilding.  Also be sure you are only building the Simulator project and it compiles with no errors.
 
@@ -807,9 +807,9 @@ In these steps, you will provision an instance of IoT Hub.
 
 5. Select **iothubowner** policy.
 
-> NOTE:  If you did not wait for the resource to provision you will not see any policies yet.
+>**Note**:  If you did not wait for the resource to provision you will not see any policies yet.
 
-    ![The Azure portal is shown with the iothubowner selected.](./media/iot-hub-shared-access-policies-iothubowner.png "IoT Hub Owner shared access policy")
+   ![The Azure portal is shown with the iothubowner selected.](./media/iot-hub-shared-access-policies-iothubowner.png "IoT Hub Owner shared access policy")
 
 6. In the **iothubowner** blade, select the Copy button to the right of the **Connection string - primary key** field. Paste the connection string value into a text editor, such as Notepad, as this will be needed later in this lab.
 
@@ -927,7 +927,7 @@ In these steps, you will provision an instance of IoT Hub.
 
     ![Screenshot of the Vending Machine Simulator and DeviceControlConsole. This time, the Vending Machine Simulator displays the soda ad.](./media/vending-machine-simulator-plus-devicecontrolconsole-select.png "Vending Machine Simulator and DeviceControlConsole")
 
-> NOTE:  If you get a DeviceNotFoundException, ensure that you entered the IoT connection strings properly.
+>**Note**: If you get a DeviceNotFoundException, ensure that you entered the IoT connection strings properly.
 
 16. Observe that the entire promotion surface of the vending machine changes (product name, price, and image).
 
