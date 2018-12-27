@@ -9,7 +9,7 @@ Before the hands-on lab setup guide
 </div>
 
 <div class="MCWHeader3">
-September 2018
+December 2018
 </div>
  
 Information in this document, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious, and no association with any real company, organization, product, domain name, e-mail address, logo, person, place or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this document may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.
@@ -215,7 +215,7 @@ In these steps, you will add containers for photos and promos to the photostorag
 
 1. In the [Azure portal](https://portal.azure.com), navigate to the photostorageSUFFIX storage account by selecting Resource groups from the Azure navigation pane, entering "hands-on-lab" in the filter box, selecting the hands-on-lab-SUFFIX resource group, and locating the photostorageSUFFIX storage account in the list of resources.
 
-2. From the storage account Overview blade, select the Blobs tile under Services.
+2. From the storage account Overview blade, select the **Blobs** tile under Services.
 
     ![Screenshot of the Storage account blade, services section. Under Services, Blobs is selected.](./media/azure-storage-account-blobs-tile.png "Storage account blade, services section")
 
@@ -251,7 +251,7 @@ In these steps, you will add containers for photos and promos to the photostorag
 
     ![Screenshot of the Upload blob button.](./media/visual-studio-cloud-explorer-storage-account-container-upload-blob.png "Upload blob button")
 
-12. Select **Browse**, and in the File dialog, select the three images `CoconutWater.png`, `Water.png`, and `Soda.png` from the `C:\VendingMachines\Hands-on lab\starter-project\SimulatorSimulator\Images` folder, then select **Open**.
+12. Select **Browse**, and in the File dialog, select the three images `CoconutWater.png`, `Water.png`, and `Soda.png` from the `C:\VendingMachines\Hands-on lab\starter-project\Simulator\Images` folder, then select **Open**.
 
 13. Select **OK** on the Upload New File Dialog to upload the images into the container.
 
