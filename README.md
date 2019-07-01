@@ -1,6 +1,6 @@
 # Intelligent vending machines
 
-## This workshop is no longer being maintained and will be archived on June 28, 2019.
+## This workshop is archived and is no longer being maintained. Content is read-only.
 
 [Download cloud workshop](https://github.com/Microsoft/MCW-Intelligent-vending-machines/archive/master.zip)
 
@@ -45,9 +45,5 @@ At the end of this hands-on lab, you will be better able to build IoT solutions 
 - R Tools for Visual Studio 2017
 - Visual Studio 2017
 
-## Azure solution
-
-Intelligent Apps
-
 ## Related references
-[MCW](https://github.com/Microsoft/MCW)
+[Microsoft Cloud Workshop](https://microsoftcloudworkshop.com/index.html)
