@@ -1,6 +1,5 @@
 # Intelligent vending machines
 
-## This workshop is archived and is no longer being maintained. Content is read-only.
 
 [Download cloud workshop](https://github.com/Microsoft/MCW-Intelligent-vending-machines/archive/master.zip)
 
